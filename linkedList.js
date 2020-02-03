@@ -1,3 +1,4 @@
+// implement generic node class
 class _Node {
   constructor(value, next) {
     this.value = value
@@ -5,11 +6,13 @@ class _Node {
   }
 }
 
+// initiate head of empty list
 class LinkedList {
   constructor() {
     this.head = null
   }
 
+  // create new instance of node class as head
   insertFirst(item) {
     this.head = new _Node(item, this.head)
   }
